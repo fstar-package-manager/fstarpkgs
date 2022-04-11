@@ -1,0 +1,134 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1649676176,
+        "narHash": "sha256-OWKJratjt2RW151VUlJPRALb7OU2S5s+f0vLj4o1bHM=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "a4b154ebbdc88c8498a5c7b01589addc9e9cb678",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_2": {
+      "locked": {
+        "lastModified": 1631561581,
+        "narHash": "sha256-3VQMV5zvxaVLvqqUrNz3iJelLw30mIVSfZmAaauM3dA=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "7e5bf3925f6fbdfaf50a2a7ca0be2879c4261d19",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "fpm": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "typescript-json-schema": "typescript-json-schema",
+        "yants": "yants"
+      },
+      "locked": {
+        "lastModified": 1649656800,
+        "narHash": "sha256-lQSOaRTjA9Vd4wVX/uhzg2NELUY+emh7+PNgPORVswQ=",
+        "ref": "master",
+        "rev": "ed18e15cde542f02fd5de3779879cdb44905d8f2",
+        "revCount": 4,
+        "type": "git",
+        "url": "ssh://git@github.com/fstar-package-manager/fpm"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/fstar-package-manager/fpm"
+      }
+    },
+    "napalm": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": [
+          "fpm",
+          "typescript-json-schema",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1649207539,
+        "narHash": "sha256-Ij6G5S8dxHaLPWMewQPrGU18DF6sAk4FPBRD7CH9Cpw=",
+        "owner": "nix-community",
+        "repo": "napalm",
+        "rev": "0180029fac200839017b8f75cb067d8f23c254d0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "napalm",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1648069223,
+        "narHash": "sha256-BXzQV8p/RR440EB9qY0ULYfTH0zSW1stjUCYeP4SF+E=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "1d08ea2bd83abef174fb43cbfb8a856b8ef2ce26",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "fpm": "fpm"
+      }
+    },
+    "typescript-json-schema": {
+      "inputs": {
+        "napalm": "napalm",
+        "nixpkgs": [
+          "fpm",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "narHash": "sha256-0vqtE5ad1QWrpbcP07sWum5Sei/4SdYnRSFA6V2nIrs=",
+        "path": "./typescript-json-schema",
+        "type": "path"
+      },
+      "original": {
+        "path": "./typescript-json-schema",
+        "type": "path"
+      }
+    },
+    "yants": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649693918,
+        "narHash": "sha256-+a03XoM7o8sMWC84X7zSUneMKZmanHkYx2pexu1jqxQ=",
+        "ref": "canon",
+        "rev": "1a2fe4b06353669805a135ece55da4e9a1ca689a",
+        "revCount": 15823,
+        "type": "git",
+        "url": "https://code.tvl.fyi/depot.git/"
+      },
+      "original": {
+        "ref": "canon",
+        "type": "git",
+        "url": "https://code.tvl.fyi/depot.git/"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
