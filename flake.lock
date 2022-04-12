@@ -33,11 +33,11 @@
     "foo": {
       "flake": false,
       "locked": {
-        "lastModified": 1649743200,
-        "narHash": "sha256-doPsK+snGDwxF4rZ+X8H4xWEei1yGSnt2eI2mVeBSLM=",
+        "lastModified": 1649788021,
+        "narHash": "sha256-ujHq8DgFUEv9PrLOM3FBK3TndrKfuCk/98NQTOHWUaU=",
         "ref": "master",
-        "rev": "1d7dcb6567b205c4a00f0afc6b991bdf1f38855b",
-        "revCount": 1,
+        "rev": "5a060ce31d56bdafae0c9b47adf32e3650137152",
+        "revCount": 2,
         "type": "git",
         "url": "ssh://git@github.com/fstar-package-manager/foo"
       },
@@ -70,11 +70,11 @@
     "hello": {
       "flake": false,
       "locked": {
-        "lastModified": 1649743200,
-        "narHash": "sha256-LeDImbT57k27BNnjR5/SMZaixrlTk+i/P1h9lCoRUa8=",
+        "lastModified": 1649788039,
+        "narHash": "sha256-TDJ7xA4M4umCvuu9xhlODLa5X7l+NRI2KOxFj6gBN98=",
         "ref": "master",
-        "rev": "1bc6507ed900c1de77d42f083fbffc40309800eb",
-        "revCount": 1,
+        "rev": "6cbfaab95fe9b2781776b150bb3a2e95d309b9c5",
+        "revCount": 2,
         "type": "git",
         "url": "ssh://git@github.com/fstar-package-manager/hello"
       },
