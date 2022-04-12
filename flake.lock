@@ -38,17 +38,35 @@
         "yants": "yants"
       },
       "locked": {
-        "lastModified": 1649656800,
-        "narHash": "sha256-lQSOaRTjA9Vd4wVX/uhzg2NELUY+emh7+PNgPORVswQ=",
+        "lastModified": 1649743719,
+        "narHash": "sha256-s7DCzgJBJAK7H/5/ieC6FMcKldhwxYe3/0mY/nHZ2B8=",
         "ref": "master",
-        "rev": "ed18e15cde542f02fd5de3779879cdb44905d8f2",
-        "revCount": 4,
+        "rev": "c85f736fb7b0302f563668802f133157b31756cd",
+        "revCount": 5,
         "type": "git",
         "url": "ssh://git@github.com/fstar-package-manager/fpm"
       },
       "original": {
         "type": "git",
         "url": "ssh://git@github.com/fstar-package-manager/fpm"
+      }
+    },
+    "hello": {
+      "flake": false,
+      "locked": {
+        "dir": "hello",
+        "lastModified": 1649744135,
+        "narHash": "sha256-rPIeQOr0Y6AwZ1ObH+qpV5CnDTl/OJcBeylPxa2DTpI=",
+        "ref": "master",
+        "rev": "dc3324e1f251b0ba6235993b6d28adbbc975286c",
+        "revCount": 1,
+        "type": "git",
+        "url": "ssh://git@github.com/fstar-package-manager/example-packages?dir=hello"
+      },
+      "original": {
+        "dir": "hello",
+        "type": "git",
+        "url": "ssh://git@github.com/fstar-package-manager/example-packages?dir=hello"
       }
     },
     "napalm": {
@@ -90,7 +108,8 @@
     },
     "root": {
       "inputs": {
-        "fpm": "fpm"
+        "fpm": "fpm",
+        "hello": "hello"
       }
     },
     "typescript-json-schema": {
