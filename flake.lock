@@ -30,6 +30,22 @@
         "type": "github"
       }
     },
+    "foo": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649743200,
+        "narHash": "sha256-doPsK+snGDwxF4rZ+X8H4xWEei1yGSnt2eI2mVeBSLM=",
+        "ref": "master",
+        "rev": "1d7dcb6567b205c4a00f0afc6b991bdf1f38855b",
+        "revCount": 1,
+        "type": "git",
+        "url": "ssh://git@github.com/fstar-package-manager/foo"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/fstar-package-manager/foo"
+      }
+    },
     "fpm": {
       "inputs": {
         "flake-utils": "flake-utils",
@@ -54,19 +70,17 @@
     "hello": {
       "flake": false,
       "locked": {
-        "dir": "hello",
-        "lastModified": 1649744135,
-        "narHash": "sha256-rPIeQOr0Y6AwZ1ObH+qpV5CnDTl/OJcBeylPxa2DTpI=",
+        "lastModified": 1649743200,
+        "narHash": "sha256-LeDImbT57k27BNnjR5/SMZaixrlTk+i/P1h9lCoRUa8=",
         "ref": "master",
-        "rev": "dc3324e1f251b0ba6235993b6d28adbbc975286c",
+        "rev": "1bc6507ed900c1de77d42f083fbffc40309800eb",
         "revCount": 1,
         "type": "git",
-        "url": "ssh://git@github.com/fstar-package-manager/example-packages?dir=hello"
+        "url": "ssh://git@github.com/fstar-package-manager/hello"
       },
       "original": {
-        "dir": "hello",
         "type": "git",
-        "url": "ssh://git@github.com/fstar-package-manager/example-packages?dir=hello"
+        "url": "ssh://git@github.com/fstar-package-manager/hello"
       }
     },
     "napalm": {
@@ -108,6 +122,7 @@
     },
     "root": {
       "inputs": {
+        "foo": "foo",
         "fpm": "fpm",
         "hello": "hello"
       }
